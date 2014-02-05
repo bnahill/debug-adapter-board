@@ -1,0 +1,66 @@
+Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Wed 05 Feb 2014 01:31:55 PM EST
+
+BeginCmp
+TimeStamp = /52E974BD;
+Reference = J1;
+ValeurCmp = CONN_10X2;
+IdModule  = HDR_10X2_100MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E974CC;
+Reference = J2;
+ValeurCmp = CONN_5X2;
+IdModule  = HDR_5X2_50MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E97908;
+Reference = J3;
+ValeurCmp = CONN_1X1;
+IdModule  = HDR_1X1_100MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E97915;
+Reference = J4;
+ValeurCmp = CONN_1X1;
+IdModule  = HDR_1X1_100MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E97A71;
+Reference = J5;
+ValeurCmp = CONN_5X2;
+IdModule  = HDR_5X2_50MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E977C2;
+Reference = J6;
+ValeurCmp = CONN_6X1;
+IdModule  = HDR_6X1_100MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E97BD8;
+Reference = J7;
+ValeurCmp = CONN_5X1;
+IdModule  = HDR_5X1_50MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E979C5;
+Reference = J8;
+ValeurCmp = CONN_6X1;
+IdModule  = HDR_6X1_50MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E97BE7;
+Reference = J9;
+ValeurCmp = CONN_5X1;
+IdModule  = HDR_5X1_50MIL_THRU;
+EndCmp
+
+EndListe

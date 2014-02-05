@@ -1,0 +1,336 @@
+EESchema Schematic File Version 2
+LIBS:jtag_conn
+LIBS:jtag_conn-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "JTAG/SWD Header Adapter"
+Date "5 feb 2014"
+Rev "r1a"
+Comp "Ben Nahill <bnahill@gmail.com>"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_10X2 J1
+U 1 1 52E974BD
+P 2300 3800
+F 0 "J1" H 2300 3250 60  0000 C CNN
+F 1 "CONN_10X2" H 2300 4350 60  0000 C CNN
+F 2 "" H 2300 4050 60  0000 C CNN
+F 3 "" H 2300 4050 60  0000 C CNN
+	1    2300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_5X2 J2
+U 1 1 52E974CC
+P 3450 3750
+F 0 "J2" H 3450 3450 60  0000 C CNN
+F 1 "CONN_5X2" H 3450 4050 60  0000 C CNN
+F 2 "" H 3450 3750 60  0000 C CNN
+F 3 "" H 3450 3750 60  0000 C CNN
+	1    3450 3750
+	1    0    0    -1  
+$EndComp
+Text Label 2000 3350 2    60   ~ 0
+VCC
+Wire Wire Line
+	2000 3350 2150 3350
+Text Label 2000 3450 2    60   ~ 0
+TRST
+Text Label 2000 3550 2    60   ~ 0
+TDI
+Text Label 2000 3650 2    60   ~ 0
+SWDIO_TMS
+Text Label 2000 3750 2    60   ~ 0
+SWCLK_TCLK
+Text Label 2000 3850 2    60   ~ 0
+RTCK
+Text Label 2000 3950 2    60   ~ 0
+SWO_TDO
+Text Label 2000 4050 2    60   ~ 0
+RESET
+Text Label 2600 4250 0    60   ~ 0
+GND
+Wire Wire Line
+	2450 4250 2600 4250
+Wire Wire Line
+	2450 3450 2550 3450
+Wire Wire Line
+	2550 3450 2550 4250
+Connection ~ 2550 4250
+Wire Wire Line
+	2550 4150 2450 4150
+Connection ~ 2550 4150
+Wire Wire Line
+	2450 4050 2550 4050
+Connection ~ 2550 4050
+Wire Wire Line
+	2550 3950 2450 3950
+Connection ~ 2550 3950
+Wire Wire Line
+	2450 3850 2550 3850
+Connection ~ 2550 3850
+Wire Wire Line
+	2550 3750 2450 3750
+Connection ~ 2550 3750
+Wire Wire Line
+	2450 3650 2550 3650
+Connection ~ 2550 3650
+Wire Wire Line
+	2550 3550 2450 3550
+Connection ~ 2550 3550
+Wire Wire Line
+	2000 4050 2150 4050
+Wire Wire Line
+	2150 3950 2000 3950
+Wire Wire Line
+	2150 3850 2000 3850
+Wire Wire Line
+	2000 3750 2150 3750
+Wire Wire Line
+	2150 3650 2000 3650
+Wire Wire Line
+	2000 3550 2150 3550
+Wire Wire Line
+	2150 3450 2000 3450
+Text Label 3100 3550 2    60   ~ 0
+VCC
+Text Label 3800 3550 0    60   ~ 0
+SWDIO_TMS
+Text Label 3800 3650 0    60   ~ 0
+SWCLK_TCLK
+Text Label 3800 3750 0    60   ~ 0
+SWO_TDO
+Text Label 3800 3950 0    60   ~ 0
+RESET
+Text Label 3100 3950 2    60   ~ 0
+GND
+Wire Wire Line
+	3100 3650 3100 3950
+Wire Wire Line
+	3100 3650 3300 3650
+Wire Wire Line
+	3300 3750 3100 3750
+Connection ~ 3100 3750
+Wire Wire Line
+	3100 3950 3300 3950
+Wire Wire Line
+	3600 3950 3800 3950
+Wire Wire Line
+	3800 3750 3600 3750
+Wire Wire Line
+	3600 3650 3800 3650
+Wire Wire Line
+	3800 3550 3600 3550
+Wire Wire Line
+	3300 3550 3100 3550
+Text Notes 1950 2900 0    60   ~ 0
+20-Pin JTAG
+Text Notes 3100 2900 0    60   ~ 0
+10-Pin SWD
+$Comp
+L CONN_6X1 J6
+U 1 1 52E977C2
+P 4950 3800
+F 0 "J6" H 4950 3450 60  0000 C CNN
+F 1 "CONN_6X1" H 4950 4150 60  0000 C CNN
+F 2 "~" H 4950 3850 60  0000 C CNN
+F 3 "~" H 4950 3850 60  0000 C CNN
+	1    4950 3800
+	1    0    0    -1  
+$EndComp
+Text Label 5300 3650 0    60   ~ 0
+SWCLK_TCLK
+Text Label 5300 3750 0    60   ~ 0
+GND
+Text Label 5300 3850 0    60   ~ 0
+SWDIO_TMS
+Text Label 5300 3950 0    60   ~ 0
+RESET
+Text Label 5300 4050 0    60   ~ 0
+SWO_TDO
+Wire Wire Line
+	5300 4050 5100 4050
+Wire Wire Line
+	5100 3950 5300 3950
+Wire Wire Line
+	5300 3850 5100 3850
+Wire Wire Line
+	5100 3750 5300 3750
+Wire Wire Line
+	5300 3650 5100 3650
+$Comp
+L CONN_1X1 J3
+U 1 1 52E97908
+P 4700 1700
+F 0 "J3" H 4700 1600 60  0000 C CNN
+F 1 "CONN_1X1" H 4700 1800 60  0000 C CNN
+F 2 "~" H 4700 1500 60  0000 C CNN
+F 3 "~" H 4700 1500 60  0000 C CNN
+	1    4700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1X1 J4
+U 1 1 52E97915
+P 4700 2200
+F 0 "J4" H 4700 2100 60  0000 C CNN
+F 1 "CONN_1X1" H 4700 2300 60  0000 C CNN
+F 2 "~" H 4700 2000 60  0000 C CNN
+F 3 "~" H 4700 2000 60  0000 C CNN
+	1    4700 2200
+	1    0    0    -1  
+$EndComp
+Text Label 5000 2200 0    60   ~ 0
+GND
+Text Label 5000 1700 0    60   ~ 0
+VCC
+Wire Wire Line
+	5000 1700 4850 1700
+Wire Wire Line
+	4850 2200 5000 2200
+$Comp
+L CONN_6X1 J8
+U 1 1 52E979C5
+P 6550 3800
+F 0 "J8" H 6550 3450 60  0000 C CNN
+F 1 "CONN_6X1" H 6550 4150 60  0000 C CNN
+F 2 "~" H 6550 3850 60  0000 C CNN
+F 3 "~" H 6550 3850 60  0000 C CNN
+	1    6550 3800
+	1    0    0    -1  
+$EndComp
+Text Label 6900 3850 0    60   ~ 0
+SWCLK_TCLK
+Text Label 6900 4050 0    60   ~ 0
+GND
+Text Label 6900 3650 0    60   ~ 0
+SWDIO_TMS
+Text Label 6900 3550 0    60   ~ 0
+RESET
+Text Label 6900 3750 0    60   ~ 0
+SWO_TDO
+Wire Wire Line
+	6900 4050 6700 4050
+Wire Wire Line
+	6700 3950 6900 3950
+Wire Wire Line
+	6900 3850 6700 3850
+Wire Wire Line
+	6700 3750 6900 3750
+Wire Wire Line
+	6900 3650 6700 3650
+Text Notes 4750 2900 0    60   ~ 0
+STM32xDISCOVERY
+Text Notes 6400 2900 0    60   ~ 0
+AudioPulse
+Wire Wire Line
+	6900 3550 6700 3550
+Text Label 6900 3950 0    60   ~ 0
+VCC
+$Comp
+L CONN_5X2 J5
+U 1 1 52E97A71
+P 4700 5250
+F 0 "J5" H 4700 4950 60  0000 C CNN
+F 1 "CONN_5X2" H 4700 5550 60  0000 C CNN
+F 2 "" H 4700 5250 60  0000 C CNN
+F 3 "" H 4700 5250 60  0000 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+Text Notes 4450 4800 0    60   ~ 0
+SensorTag
+Text Label 4350 5050 2    60   ~ 0
+GND
+Text Label 4350 5150 2    60   ~ 0
+TI_DC
+Text Label 5050 5150 0    60   ~ 0
+TI_DD
+Text Label 5050 5050 0    60   ~ 0
+VCC
+Text Label 4400 5350 2    60   ~ 0
+TI_RESET
+Wire Wire Line
+	4400 5350 4550 5350
+Wire Wire Line
+	4550 5150 4350 5150
+Wire Wire Line
+	4350 5050 4550 5050
+Wire Wire Line
+	4850 5050 5050 5050
+Wire Wire Line
+	5050 5150 4850 5150
+$Comp
+L CONN_5X1 J7
+U 1 1 52E97BD8
+P 6100 5250
+F 0 "J7" H 6100 4950 60  0000 C CNN
+F 1 "CONN_5X1" H 6100 5550 60  0000 C CNN
+F 2 "~" H 6100 5250 60  0000 C CNN
+F 3 "~" H 6100 5250 60  0000 C CNN
+	1    6100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_5X1 J9
+U 1 1 52E97BE7
+P 7900 3750
+F 0 "J9" H 7900 3450 60  0000 C CNN
+F 1 "CONN_5X1" H 7900 4050 60  0000 C CNN
+F 2 "~" H 7900 3750 60  0000 C CNN
+F 3 "~" H 7900 3750 60  0000 C CNN
+	1    7900 3750
+	1    0    0    -1  
+$EndComp
+Text Label 8250 3950 0    60   ~ 0
+GND
+Text Label 8250 3850 0    60   ~ 0
+VCC
+Text Label 8250 3650 0    60   ~ 0
+SWCLK_TCLK
+Text Label 8250 3750 0    60   ~ 0
+SWDIO_TMS
+Text Label 8250 3550 0    60   ~ 0
+RESET
+Wire Wire Line
+	8250 3550 8050 3550
+Wire Wire Line
+	8050 3650 8250 3650
+Wire Wire Line
+	8250 3750 8050 3750
+Wire Wire Line
+	8050 3850 8250 3850
+Wire Wire Line
+	8250 3950 8050 3950
+Text Notes 8050 2900 0    60   ~ 0
+NUS SWD
+Text Notes 6250 4800 0    60   ~ 0
+NUS TI
+Text Label 6500 5050 0    60   ~ 0
+TI_RESET
+Text Label 6500 5150 0    60   ~ 0
+GND
+Text Label 6500 5250 0    60   ~ 0
+VCC
+Text Label 6500 5350 0    60   ~ 0
+TI_DC
+Text Label 6500 5450 0    60   ~ 0
+TI_DD
+Wire Wire Line
+	6500 5450 6250 5450
+Wire Wire Line
+	6250 5350 6500 5350
+Wire Wire Line
+	6500 5250 6250 5250
+Wire Wire Line
+	6250 5150 6500 5150
+Wire Wire Line
+	6500 5050 6250 5050
+$EndSCHEMATC
