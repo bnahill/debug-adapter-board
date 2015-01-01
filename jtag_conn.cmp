@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Wed 05 Feb 2014 01:31:55 PM EST
+Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Thu 01 Jan 2015 10:29:03 AM EST
 
 BeginCmp
 TimeStamp = /52E974BD;
@@ -61,6 +61,13 @@ TimeStamp = /52E97BE7;
 Reference = J9;
 ValeurCmp = CONN_5X1;
 IdModule  = HDR_5X1_50MIL_THRU;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A567AA;
+Reference = J10;
+ValeurCmp = CONN_2X1;
+IdModule  = HDR_2X1_100MIL_THRU;
 EndCmp
 
 EndListe

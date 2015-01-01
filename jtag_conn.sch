@@ -7,7 +7,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "JTAG/SWD Header Adapter"
-Date "5 feb 2014"
+Date "1 jan 2015"
 Rev "r1a"
 Comp "Ben Nahill <bnahill@gmail.com>"
 Comment1 ""
@@ -37,10 +37,10 @@ F 3 "" H 3450 3750 60  0000 C CNN
 	1    3450 3750
 	1    0    0    -1  
 $EndComp
-Text Label 2000 3350 2    60   ~ 0
+Text Label 2000 3250 2    60   ~ 0
 VCC
 Wire Wire Line
-	2000 3350 2150 3350
+	1600 3350 2150 3350
 Text Label 2000 3450 2    60   ~ 0
 TRST
 Text Label 2000 3550 2    60   ~ 0
@@ -333,4 +333,19 @@ Wire Wire Line
 	6250 5150 6500 5150
 Wire Wire Line
 	6500 5050 6250 5050
+$Comp
+L CONN_2X1 J10
+U 1 1 54A567AA
+P 1450 3300
+F 0 "J10" H 1450 3150 60  0000 C CNN
+F 1 "CONN_2X1" H 1450 3450 60  0000 C CNN
+F 2 "~" H 1450 3150 60  0000 C CNN
+F 3 "~" H 1450 3150 60  0000 C CNN
+	1    1450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3250 2000 3250
+Text Label 2000 3350 2    60   ~ 0
+VCC_JTAG
 $EndSCHEMATC
